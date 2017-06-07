@@ -9,13 +9,16 @@ body {
 a {
   text-decoration: none;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  cursor: default; }
 
 nav {
   width: 100%;
   background-color: #FEFEFE;
   position: absolute;
-  border-radius: 1px;
+  border-radius: 2px;
   display: inline-block;
   height: 50px;
   line-height: 50px;
@@ -61,9 +64,20 @@ nav li li {
   margin-left: 105px; }
 
 .marked {
-  background-color: #3FA6FD; }
+  background-color: #3FA6FD;
+  border-radius: 2px; }
 
 .marked1 {
   color: #ffffff; }
+
+.rotate {
+  moz-transition: all 0.3s linear;
+  webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
+
+.rotate.down {
+  moz-transform: rotate(180deg);
+  webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,9 @@ $('.drop-box').on('click', function() {
   $('.drop-text').toggleClass('marked1');
 });
 
-    
+$(".drop-box").click(function(){
+    $('.rotate').toggleClass("down"); 
+});
 
 
 
