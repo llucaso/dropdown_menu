@@ -68,8 +68,6 @@ nav li li {
   height: 20px;
   position: relative;
   top: 4px; }
-  .messages img g path {
-    fill: red; }
 
 .messages:hover a {
   color: #6d6c6c; }
