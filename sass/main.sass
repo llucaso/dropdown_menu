@@ -3,15 +3,6 @@
 	padding: 0
 	box-sizing: border-box
 
-=transform($transforms)
-	-moz-transform: $transforms
-	-o-transform: $transforms
-	-ms-transform: $transforms
-	-webkit-transform: $transforms
-	transform: $transforms
-
-=rotate ($deg)
-	@include transform(rotate(#{$deg}deg))
 
 body
 	background-color: black
@@ -23,6 +14,7 @@ a
 	font-family: 'Open Sans'
 	font-size: 14px
 	cursor: default
+	color: #838ea7
 
 nav
 	width: 100%
@@ -60,13 +52,46 @@ nav
 			//display: block
 			background-color: #FEFEFE
 
+
 .home
 	border-top-left-radius: 1px
 	border-top-right-radius: 1px
+	border-bottom: 1px #d7d9dd solid
+	img
+		width: 20px
+		height: 20px
+		position: relative
+		top: 4px
+	&:hover
+		a
+			color: #6d6c6c
+
 
 .settings
 	border-bottom-left-radius: 1px
 	border-bottom-right-radius: 1px
+	border-top: 1px #d7d9dd solid
+	img
+		width: 20px
+		height: 20px
+		position: relative
+		top: 4px
+	&:hover
+		a
+			color: #6d6c6c
+
+.messages
+	img
+		width: 20px
+		height: 20px
+		position: relative
+		top: 4px
+
+	&:hover
+		a
+			color: #6d6c6c
+
+
 
 .hamburger
 	margin-right: 20px
@@ -76,13 +101,13 @@ nav
 	width: 0
 	height: 0
 	margin-left: 274px
-	border-right: 11px solid transparent
-	border-left: 11px solid transparent
+	border-right: 9px solid transparent
+	border-left: 9px solid transparent
 	border-bottom: 9px solid #FEFEFE
 	position: relative
 	top: -9px
 
-.fa
+.fa-chevron-up
 	margin-left: 105px
 
 
@@ -102,5 +127,7 @@ nav
 	moz-transform: rotate(180deg)
 	webkit-transform: rotate(180deg)
 	transform: rotate(180deg)
+
+
 
 
